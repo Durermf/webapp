@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gardies Cambridge Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+</head>
+
+<body>
+    <div id="wholepage" class="container">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Bob's Diner</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a> </li>
+                        <li><a href="Cheeseburgers.html">Starters</a> </li>
+                        <li><a href="index.html">Main</a> </li>
+                        <li><a href="index.html">Desserts</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1>Bob's Dinner</h1>
+            <p>The best burgers and fries in Cambridge</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <form id="evening" class="form-inline">
+                <button  type="submit">Evening</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <form id="morning" class="form-inline">
+                <button  type="submit">Morning</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <form id="studentdiscount" class="form-inline">
+                    <button  type="submit">10% STUDENT DICOUNT</button>
+                </form>
+            </div>
+
+        </div>
+        <!--<div class="row">-->
+            <!--<form id="student-discount" method="post" action="/studentdiscount">-->
+                <!--<button type="submit" >10% STUDENT DISCOUNT</button>-->
+            <!--</form>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+            <!--<button id="theme-evening" type="button" >Evening</button>-->
+
+        <!--</div>-->
+        <!--<script type="text/javascript">-->
+            <!--$("#theme-evening").text("Hello, world!")-->
+                    <!--.removeClass("blue")-->
+                    <!--.addClass("bold")-->
+                    <!--.css("color", "blue");-->
+        <!--</script>-->
+
+
+        <div class="page-header">
+            <h2>Starters</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/salad.jpg" class="img-rounded img-responsive"/>
+                <h4>Salad <span class="label label-info"> GBP 4.99 </span></h4>
+            </div>
+            <div class="col-md-4">
+                <img src="img/camembert.jpg" class="img-rounded img-responsive" />
+                <h4>Camembert <span class="label label-info"> GBP 5.99 </span></h4>
+            </div>
+        </div>
+
+
+        <div class="page-header">
+            <h2>Main</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/burger.jpg" class="img-rounded img-responsive"/>
+                <h4>Beef Burger <span class="label label-info"> GBP 9.99 </span></h4>
+            </div>
+            <div class="col-md-4">
+                <img src="img/veggieburger.jpg" class="img-rounded img-responsive"/>
+                <h4>Vegetarian Burger <span class="label label-info"> GBP 7.99 </span></h4>
+            </div>
+        </div>
+
+
+        <div class="page-header">
+            <h2>Desserts</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/milkshake.jpg" class="img-rounded img-responsive"/>
+                <h4>Milkshake <span class="label label-info"> GBP 3.99 </span></h4>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8" id="greeting">
+                <h1>Make a booking inquiry</h1>
+                <form id="greeting-form" method="post" action="/booking">
+
+                    <div class="form-group">
+                        <label for="fullName">Name</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Bob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fullemail">Email</label>
+                        <input type="email" id="fullemail" name="fullemail" class="form-control" placeholder="Bob@cam.ac.uk" required
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guestnumber">Number of guests</label>
+                        <input type="number" id="guestnumber" name="guestnumber" class="form-control" placeholder="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="visitdate">Date</label>
+                        <input type="date" id="visitdate" name="visitdate" class="form-control" required>
+                    </div>
+
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+     </div>
+
+    <script src="jquery.js"></script>
+    <script src="newscrp.js"></script>
+
+</body>
+</html>
